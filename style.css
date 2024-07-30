@@ -14,25 +14,36 @@ ul{
     justify-content: center;
     gap: 10px;
     font-size: 30px;
+ 
+    
 }
-
-li:hover{
-    color: rgb(255, 255, 255);
+li{
+    position: relative;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    list-style-type: none;
 }
-li::before{
-    content: '';
+li:after{
+    content: "";
     position: absolute;
-    left: 0px;
-    width: 100%;
+    background-color: #ff3c78;
     height: 3px;
-    background-color: crimson;
-    transition: all .5s;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
 }
-
-li hover::before{
+li:hover{
+    color: #ffffff;
+}
+li:hover:after{
     width: 100%;
-
 }
+
 
 .menu{
     color:rgb(101, 27, 27);
@@ -41,7 +52,7 @@ li hover::before{
 }
 
 #section01{
-    background-color: blue;
+    background-color: rgb(170, 168, 4);
 }
 #section02{
     background-color: aqua;
