@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portefolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Honk&family=Nabla&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gupter:wght@400;500;700&family=Honk&family=Nabla&family=Oswald:wght@200..700&family=Playwrite+BE+VLG:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="menu">
         <ul>
-            <li><a href ="#section01"> Section 01 </a></li>
-            <li><a href ="#section02"> Section 02 </a></li>
-            <li><a href ="#section03"> Section 03 </a></li>
-            <li><a href ="#section04"> Section 04 </a></li>
+            <li><a href="#section01">Section 01</a></li>
+            <li><a href="#section02">Section 02</a></li>
+            <li><a href="#section03">Section 03</a></li>
+            <li><a href="#section04">Section 04</a></li>
         </ul>
     </header>
     <main>
         <section id="section01">
-            <h2>Parte 01</h2>
+            <div class="section01-left-div">
+                <img src="assets/images/sid.jpg" alt="Mastodonte" width="500px" height="auto"
+                    class="image-style-section01" />
+            </div>
+            <div class="section01-right-div">
+                <h2>Marsupial</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+                    accusantium modi, voluptatibus deleniti illo dignissimos id voluptas
+                    natus reiciendis maiores explicabo dolores quaerat architecto autem
+                    unde incidunt ipsa? Ipsam, error. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Corporis, accusantium modi,
+                    voluptatibus deleniti illo dignissimos id voluptas natus reiciendis
+                    maiores explicabo dolores quaerat architecto autem unde incidunt
+                    ipsa? Ipsam, error.
+                </p>
+            </div>
         </section>
         <section id="section02">
-            <h2>Parte 02</h2>
+            <h2>parte 02</h2>
         </section>
         <section id="section03">
-            <h2>Parte 03</h2>
+            <h2>parte 03</h2>
         </section>
         <section id="section04">
-            <h2>Parte 04</h2>
-        </section>
-    </main>
-</body>
-</html>
+            <div class="left-contact">
+              <h2 class="heading-contact">Contato</h2>
+              <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" />
+              </div>
+              <div>
+                <label for="mensagem">Mensagem</label>
+                <input type="text" id="mensagem" />
+              </div>
+              <button onclick="conferirMensagemWhatsApp()">
+                Conferir Mensagem
+              </button>
+            </div>
+            <div class="right-contact">
+              <div>
+                <p>Nome: <span id="confNome"></span></p>
+                <p>Mensagem: <span id="confMsg"></span></p>
+              </div>
+              <button onclick="enviar()">ZAP</button>
+            </div>
+          </section>
+        </main>
+      </body>
+    </html>
